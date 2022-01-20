@@ -1,13 +1,20 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-
+import UseForm from "./Pages/userForm/UseForm";
+//import UseForm2 from "./Pages/userForm/UseForm2";
 function App() {
   return (
     <div className="App">
       <Routes>
-        {/* all public and private routes be declared here*/}
-        <Route path="/" element={<h1>Welcome to home page</h1>}></Route>
-      </Routes>
+
+{/* all public and private routes be declared here*/}
+
+<Route path="/" element={<h1>Welcome to home page</h1>}></Route>
+<Route path="/user" element={<UseForm /> }></Route>
+
+
+
+</Routes>
     </div>
   );
 }
