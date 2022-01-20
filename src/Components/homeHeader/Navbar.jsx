@@ -1,13 +1,24 @@
-import React from "react";
+import "./Navbar.css";
+import { useState } from "react";
+import { Dropdown } from "./Dropdown";
+function Navbar() {
+  const [state, setState] = useState(false);
 
-function Header() {
+  const display = () => {
+    setState(!state);
+  };
   return (
     <>
       <div className="navbar">
-        <img className="logo-s" src="" alt="logo" />
-        <div className="navbar-insu " onMouseOver="">
+        <div>
+          <img
+            className="logo-s"
+            src="https://static.pbcdn.in/cdn/images/new-home/logopb.svg?v=1"
+            alt="logo"
+          />
+        </div>
+        <div className="navbar-insu " onMouseOver={display}>
           <p>Insurance Products</p>
-
           <svg
             width="12"
             height="8"
@@ -61,8 +72,9 @@ function Header() {
           <button>Sign in</button>
         </div>
       </div>
+      {state && <Dropdown></Dropdown>}
     </>
   );
 }
 
-export default Header;
+export default Navbar;
