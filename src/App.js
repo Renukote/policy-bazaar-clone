@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import UseForm from "./Pages/userForm/UseForm";
+import UseForm from "./Components/userForm/UseForm";
 //import UseForm2 from "./Pages/userForm/UseForm2";
 function App() {
   return (
