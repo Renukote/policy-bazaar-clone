@@ -15,7 +15,7 @@ export const SlideCorousel1 = () => {
       naturalSlideHeight={125}
       totalSlides={3}
     >
-      <Slider className="box_div" style={{ marginLeft: "19%" }}>
+      <Slider className="box_div">
         <Slide index={0}>
           <img
             src="https://static.pbcdn.in/cdn/images/home-v1/tax-banner.png"

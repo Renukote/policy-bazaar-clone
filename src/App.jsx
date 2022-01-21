@@ -7,7 +7,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/paymet" element={<Payment />}></Route>
+        <Route path="/payment" element={<Payment />}></Route>
       </Routes>
     </>
   );
