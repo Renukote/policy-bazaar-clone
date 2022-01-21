@@ -14,6 +14,8 @@ import Grid from "@mui/material/Grid";
 import term from "../../images/term-add.mp4";
 import { styled } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
+import { PbAdvantage } from "../Pbadvantage/PbAdvantage";
+import { SlideCorousel1 } from "../Carousel/Carousel1";
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
   padding: theme.spacing(1),
@@ -85,24 +87,21 @@ function Homebody() {
               <img src={car1} alt="one" />
               <p className="home-tm">Car Insurance</p>
               <p className="home-tm1-5">
-                {" "}
                 <spam className="home-dot"> </spam> Instant Policy
               </p>
             </div>
             <div className="home-tol">
               <img src={bk} alt="one" />
               <p className="home-tm">Investment Plans </p>
-              <br />
-              <p>Become a CrorePati </p>
               <p className="home-tm1-5">
-                <spam className="home-dot">Save Tax </spam>
+                <spam className="home-dot"> </spam>
+                Save Tax
               </p>
             </div>
             <div className="home-tol">
               <img src={umre} alt="one" />
               <p className="home-tm">Health Insurance </p>
               <p className="home-tm1-5">
-                {" "}
                 <spam className="home-dot"> </spam> Covers covid-19
               </p>
             </div>
@@ -110,7 +109,6 @@ function Homebody() {
               <img src={umre} alt="one" />
               <p className="home-tm">Term Life Insurance </p>
               <p className="home-tm1-5">
-                {" "}
                 <spam className="home-dot"> </spam> Covers covid-19
               </p>
             </div>
@@ -126,7 +124,6 @@ function Homebody() {
               <img src={pepl} alt="one" />
               <p className="home-tm">Group Health Insurance</p>
               <p className="home-tmc">
-                {" "}
                 <spam className="home-dot1"> </spam> New
               </p>
             </div>
@@ -252,6 +249,8 @@ function Homebody() {
           </Grid>
         </Grid>
       </div>
+      <SlideCorousel1 />
+      <PbAdvantage />
     </>
   );
 }

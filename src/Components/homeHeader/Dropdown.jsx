@@ -3,7 +3,7 @@ import car1 from "../../images/car1.png";
 import box from "../../images/boxz1.png";
 import piggy from "../../images/piggy.png";
 import Dil from "../../images/dil.png";
-import "../../Pages/Home/Home.css";
+import "./Home.css";
 import "../homeHeader/Navbar.css";
 export const Dropdown = () => {
   return (
